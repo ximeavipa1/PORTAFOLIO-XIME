@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  /* Imagen de fondo con gradiente semi-transparente */
+  background: url('img/portada.webp') no-repeat center center / cover,
+            linear-gradient(-45deg, rgba(106, 17, 203, 0.3), rgba(65, 122, 221, 0.3), rgba(155, 89, 182, 0.3), rgba(224, 86, 253, 0.3));
+  
+  background-blend-mode: overlay; /* Mezcla gradiente con imagen */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  /* Animación del gradiente */
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero h1 span {
+  color: #ffd700;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.bg-alt {
+  background: linear-gradient(135deg, #f769f7, #7a44f8);
+}
+
+#skills i {
+  color: rgb(93, 8, 250);
+  
+}
+#services i{
+  color: rgb(206, 56, 236);
+  
+}
+#projects .card {
+  transition: transform 0.3s;
+}
+#projects .card:hover {
+  transform: translateY(-5px);
+}
+/* Navbar personalizada */
+.custom-navbar {
+  background: linear-gradient(90deg, #b064ee); /* Degradado morado */
+  padding: 10px 20px;
+}
+
+/* Marca (nombre + logo) */
+.custom-navbar .navbar-brand {
+  color: rgb(228, 227, 227) !important; 
+  font-weight: bold;
+}
+
+/* Links del menú */
+.custom-navbar .nav-link {
+  color: black !important; /* Letras negras */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #333 !important; /* Negro más oscuro al pasar el mouse */
+}
+/* Footer personalizado */
+.custom-footer {
+  background-color: #b303e9; /* Azul agua marina */
+  color: black; /* Letras negras */
+}
+
+.custom-footer p {
+  margin: 0;
+  font-weight: 500;
+}
